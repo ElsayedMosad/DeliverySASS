@@ -1,0 +1,24 @@
+.contact {
+  grid-row-gap: 15px;
+  flex-wrap: wrap;
+  .sec-email,
+  .gen-but {
+    @media (max-width: 576px) {
+      align-self: flex-start;
+    }
+  }
+  ul {
+    text-align: left;
+    padding-right: 20px;
+    li {
+      font-size: var(--small-font-size);
+      color: var(--head-color);
+      font-weight: var(--font-6);
+      margin: 10px 0;
+      span {
+        color: var(--par-color);
+        font-weight: normal;
+      }
+    }
+  }
+}

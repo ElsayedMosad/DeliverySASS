@@ -1,0 +1,21 @@
+.gen-but {
+  background-color: var(--but-bg-color);
+  color: var(--but-color);
+  text-transform: capitalize;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-weight: var(--font-6);
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  &:hover {
+    background-color: #fdc212;
+  }
+  & i {
+    font-size: var(--h3-font-size);
+    padding-right: 5px;
+  }
+}

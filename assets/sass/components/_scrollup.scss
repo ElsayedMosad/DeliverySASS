@@ -1,0 +1,20 @@
+.scrollup {
+  display: inline-flex;
+  font-size: 22px;
+  color: var(--head-color);
+  background: var(--but-bg-color);
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 100;
+  opacity: 0.8;
+}
+.scrollup:hover {
+  opacity: 1;
+}
+.scrollup.show-scroll {
+  bottom: 50px;
+}

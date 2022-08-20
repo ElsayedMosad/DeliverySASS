@@ -1,0 +1,82 @@
+.container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1050px;
+  }
+}
+.sec-flex {
+  padding: 60px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px 30px;
+  & .head {
+    font-size: var(--h1-font-size);
+    color: var(--head-color);
+    font-weight: var(--font-7);
+  }
+  & .title {
+    font-size: var(--h2-font-size);
+    color: var(--head-color);
+    font-weight: var(--font-6);
+  }
+  & .par {
+    font-size: var(--normal-font-size);
+    color: var(--par-color);
+    margin: var(--mar-15) 0 var(--mar-20);
+    padding-right: 10px;
+    line-height: 1.7;
+  }
+  & .svg-img {
+    width: 300px;
+    display: block;
+    fill: var(--but-bg-color);
+  }
+  @media (min-width: 576px) {
+    & {
+      flex-direction: row;
+      text-align: left;
+      padding: 100px 0 60px;
+    }
+    & .sec-l {
+      order: 1;
+    }
+    & .sec-r {
+      order: 2;
+    }
+    & .sec-img {
+      flex-basis: 55%;
+    }
+    & .sec-text {
+      flex-basis: 45%;
+    }
+    & .svg-img {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      gap: 30px 80px;
+      & .par {
+        padding-right: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --body-font: "Poppins", sans-serif;
+
+  // Colors
+  --but-bg-color: #fdcb35;
+  --but-color: #1a1a1a;
+  --header-shadow: 0 1px 4px #0000001a;
+  --box-shadow: 0px 2px 6px #4d390026;
+  --menu-shadow: 0 0 4px #0000001a;
+  // Light Mood
+  --body-color: #ffffff;
+  --head-color: #282725;
+  --par-color: #5d5b56;
+  --box-color: #ffffff;
+  --footer-color: #fee59a;
+  // Dark Mood
+  // --body-color: #24221E;
+  // --head-color: #F3F3F2;
+  // --par-color: #CECDCA;
+  // --box-color: #2C2A26;
+  // --footer-color: #2C2A26;
+
+  // Fonts
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  @media screen and (min-width: 968px) {
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+  //  Font weight
+  --font-6: 600;
+  --font-7: 700;
+  // Marign
+  --mar-15: 16px;
+  --mar-20: 24px;
+}

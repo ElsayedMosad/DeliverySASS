@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  background-color: var(--body-color);
+  width: 100%;
+}
+.header.shadow-header {
+  box-shadow: var(--header-shadow);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 13px 0 15px;
+  & .nav-logo {
+    font-size: var(--normal-font-size);
+    color: var(--head-color);
+    font-weight: var(--font-6);
+  }
+  .nav-menu {
+    z-index: 100;
+    background-color: var(--body-color);
+  }
+  & .nav-item {
+    position: relative;
+
+    &.active::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--head-color);
+    }
+  }
+  & .nav-link {
+    color: var(--head-color);
+    font-weight: var(--font-6);
+    font-size: var(--normal-font-size);
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 0 12px;
+    padding: 5px;
+    position: relative;
+  }
+
+  & .change-theme {
+    color: var(--head-color);
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  & .nav-toggle i {
+    font-size: var(--h2-font-size);
+    color: var(--head-color);
+    padding: 2px;
+    cursor: pointer;
+  }
+  @media (max-width: 767px) {
+    & .nav-menu {
+      position: absolute;
+      bottom: calc(100% + 20px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: var(--box-shadow);
+      padding: 10px 0;
+      transition: bottom 0.4s;
+
+      & .nav-link {
+        margin: 12px 0;
+        padding: 3px;
+      }
+      & .change-theme {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0;
+      }
+      &.show-menu {
+        bottom: -270px;
+      }
+    }
+  }
+  @media (min-width: 767.1px) {
+    & .nav-menu {
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      position: relative;
+      & .nav-list {
+        display: flex;
+      }
+      & .nav-item.active::after {
+        content: "";
+        bottom: -3px;
+      }
+      & .change-theme {
+        position: relative;
+      }
+    }
+    & .nav-toggle {
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    & .gen-but {
+      display: none;
+    }
+  }
+}
